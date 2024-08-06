@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV template</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+    <style>
+        .image-section {
+          position: fixed;
+          left: 0;
+          top: 0;
+          width: 20%;
+          padding: 10px;
+          background-color: #f1f1f1;
+          height: 100%;
+        }
+        .content-section {
+          margin-left: 22%;
+          padding: 20px;
+        }
+        .icon-link {
+            display: inline;
+            margin-right: 40px; /* Adjust the value to set the vertical gap */
+        }
+      </style>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">CURRICULUM VITAE</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small" style="background-color: black;">
+        <!--IMAGE/AVATAR-->
+        <img allign="left" src="narayan-passport-2.png" class="w3-circle w3-border w3-border-sand" style="width: 300px;"/>
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/code50/127533476" target="_blank">
+              <i data-feather="github"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.instagram.com/laxm_inarayan3194?utm_source=qr&igsh=N2I4eXB3MmNyZnlm" target="_blank">
+             <i data-feather="instagram"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://x.com/VLaxmiNara72916" target="_blank">
+             <i data-feather="twitter"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/v-laxmi-narayan-sharma-23044b2b1/" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="Updated_Resume_Aug_2024 (2).pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+          </a>
+        </div>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">CURRICULUM VITAE</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <p style="font-style: italic; font-size:x-large;">"If you resist change, you resist life."</p>
+            <h1>V Laxmi Narayan Sharma</h1>
+            <h2>Machine Learning Engineer</h3>
+            <p></p>
+          </div>
+
+          <!--ABOUT SECTION-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
+            <p class="w3-margin-top-2"> 
+              With a strong foundation in computer science and engineering, I am currently pursuing my B.Tech
+              at CMR Institute of Technology, Hyderabad. My academic journey has been marked by a consistent
+              performance, achieving a CGPA of 8.5/10. I have a solid background in key courses such as Data 
+              Structures, Operating Systems, Artificial Intelligence, and Full Stack Web Development. My technical
+              skills are complemented by practical experience gained through various internships and projects, 
+              including a notable stint as a Student Project Intern at NRSC ISRO, where I worked on machine
+               learning and image classification for geo-spatial satellite images.
+            </p>
+            <p class=""> 
+              My hands-on experience extends to several projects that demonstrate my proficiency in software 
+              development and data analysis. I developed a finance application for stock price prediction and
+               buying, utilizing Flask and Python, as part of Harvard's CS50 course. Additionally, I created 
+               a contact list app during a Harvard Android Development course, showcasing my skills in 
+               JavaScript, React JS, and React-Native JS. My involvement in group projects, such as Google
+                Data Analytics using R and Artificial Intelligence for Records Management, further highlights
+                my ability to leverage advanced algorithms and data analytics tools to solve complex problems.
+            </p>
+            <p class=""> 
+              Beyond academics, I have actively engaged in various extracurricular activities and competitions,
+              securing top positions in tech debates and essay writing competitions. I am also involved in 
+              multiple virtual internships, enhancing my knowledge in AI-ML, network security, and Android development.
+              My commitment to continuous learning is evident from the online courses I have completed on platforms 
+              like Harvard's CS50 and Infosys SpringBoard. With a passion for technology and a keen interest in research 
+              and development, I am eager to contribute to innovative projects and make a significant impact in the tech industry.
+            </p>
+          </div>
+
+          <!--RESUME-->
+          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <!--EMPLOYMENT HISTORY SECTION-->
+              <h3 class="w3-border-amber">MY EMPLOYMENT HISTORY</h3>
+              <div class="">
+                <h4>Student Project Intern at TSRO-NRSC</h4>
+                <p>July 2024 - Present</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Ensured that published content meets brand guidelines and overall communication styles</li>
+                  <li>Built relations with the online community</li>
+                  <li>Implemented social media strategies to increase engagement and followers</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>AICTE Virtual Intern </h4>
+                <p>cohort 5, 6, 7, 8</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>AI-ML Virtual Internship</li>
+                  <li>Network Security Associate Virtual Internship</li>
+                  <li>Android Developer Virtual Internship</li>
+                  <li>Cyber Security Virtual Internship</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Ambiest Technolvation Intern, DEVOPS Inter</h4>
+                <p>August 2023 - October 2023</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Learnt about Industrial application of Devops and it’s Trend in Computer Science</li>
+                </ul>
+              </div>
+            </div>
+
+            <!---EDUCATION SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY EDUCATION</h3>
+                <h4>B.Tech in AIML from CMRIT </h4>
+                <p>November 2021 - April 2025 </p>
+                <h4>Intermeddiate in MPC from Tapasya Jr.college</h4>
+                <p>April 2019 - July 2021 </p>
+            </div>
+
+            <!--SKILLS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY SKILLS</h3>
+              <!--SOFT SKILLS-->
+              <h4>Software skills</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li> Programming: Python, C, Java, SQL</li>
+                <li> Web Development & Soft Skills : HTML,CSS, Boot-Strap and Front End Development</li>
+                <li> Operating Systems:Windows, Linux</li> 
+               </ul>
+              <h4>Co-Curricular skills</h4>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Communication Skills</li>
+                  <li>Technical writing</li>
+                  <li>Leadership skills</li>
+                </ul>
+            </div>
+
+            <!--INTERESTS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY HOBBIES AND INTERESTS</h3>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Artist and Sketching with Great Passion to Reading books</li>
+                  <li>Bibliophile and Debate Enthusiast</li>
+                </ul>
+            </div>
+
+            <!--REFERENCE SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY AWARDS AND HONOURS</h3>
+              <h4>GS-MUN</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>Inter College Debate with more than 50 College Participation</li>
+                <li>Secured top 5 position</li>
+              </ul>
+              <h4>CBIT Debate</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>Technical debate </li>
+                <li>Secured 2nd position</li>
+              </ul>
+            </div>    
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">Coding Platforms</h3>
+              <h4>Codechef</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                  <li><a href="https://www.codechef.com/users/narayansharma">Codechef</a></li>
+                  <li>Highest Rating: 1522</li>
+              </ul>
+              <h4>LeetCode</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li><a href="https://leetcode.com/u/narayansharma09/">Leetcode</a></li>
+                <li>Highest Rating: 1s468</li>
+              </ul>
+              <h4>Geeks For Geeks</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li><a href="https://www.geeksforgeeks.org/user/21r01a7362/">GeeksforGeeks</a></li>
+                <li>Highest Rating: 1468</li>
+              </ul>
+            </div>            
+          </div>
+
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Name: V Laxmi Narayan Sharma</p>
+              <p>Adress: 10-1-29 Sri Vinayak Nagar Colony, Badangpet, Balapur</p>
+              <p>Phone number: +91 7382581290</p>
+              <p>E-mail: laxminarayan090503@gmail.com</p>
+            </div>
+          </div>
+
+        
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
